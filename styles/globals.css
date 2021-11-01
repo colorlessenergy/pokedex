@@ -1,16 +1,96 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[ type="text" ] {
+    background-color: #efefff;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    min-width: 200px;
+    padding: 5px;
+
+    font-size: 16px;
+}
+
+input[ type="checkbox" ] {
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 15px;
+
+    background-color: #d7ffdc;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@keyframes animatePokemon {
+    0% {
+        transform: scale(0);
+    }
+  
+    50% {
+        transform: scale(3) rotate(-45deg);
+    }
+  
+    75% {
+        transform: scale(5) rotate(45deg);
+    }
+  
+    100% {
+        transform: scale(1.5) rotate(0);
+    }
+}
+
+.pokemon-image {
+    animation: animatePokemon 5s linear both;
+}
+
+.container {
+    margin: 10px 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.text-red {
+    color: #c53939
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 10px auto;
+    }
 }
