@@ -4,6 +4,13 @@ a website to look up pokemon with a 😎 cool animation
 
 ![pokedex](https://raw.githubusercontent.com/colorlessenergy/pokedex/main/pokedex-README.gif "pokedex")
 
+## technologies
+* HTML
+* CSS
+* JavaScript
+* React
+* Next.js
+
 ## 📖 features
 
 ### 🦄 pokemon
